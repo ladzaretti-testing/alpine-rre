@@ -1,28 +1,13 @@
-{
-  /*"baseBranches": [
-    "dev",
-    "main"
-  ],*/
-
-  "lockFileMaintenance": { "enabled": true },
- /* "packageRules": [
-    {
-      "matchPackagePatterns": [
-        "*"
-      ],
-      "matchUpdateTypes": [
-        "minor"
-      ],
-      "groupName": "all minor dependencies"
-    }
-   {
-      "matchDatasources": [
-        "npm"
-      ],
-      "registryUrls": [
-        "https://index.docker.io"
-      ]
-    }
-  ],*/
-  "dependencyDashboard": true
-}
+  {
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": ["config:recommended"],
+    "labels": ["e2e-renovate-json"],
+    "rangeStrategy": "bump",
+    "packageRules": [
+      {
+        "matchManagers": ["npm"],
+        "matchUpdateTypes": ["minor", "patch"],
+        "groupName": "npm-minor-patch"
+      }
+    ]
+  }
