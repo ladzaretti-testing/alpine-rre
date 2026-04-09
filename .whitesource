@@ -4,7 +4,7 @@
       "enableReachability": true
     },
     "issueSettings": {
-      "issueType": "DEPENDENCY"
+      "issueType": "VULNERABILITY"
     },
     "hostRules": [
       {
