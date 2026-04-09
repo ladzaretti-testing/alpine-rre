@@ -1,26 +1,15 @@
-{
+  {
     "scanSettings": {
       "baseBranches": ["main"],
       "enableReachability": true
     },
     "issueSettings": {
-      "issueType": "VULNERABILITY"
+      "issueType": "DEPENDENCY",
+      "minSeverityLevel": "LOW"
     },
-    "hostRules": [
-      {
-        "hostType": "nuget",
-        "matchHost": "https://nuget.example.test",
-        "token": "placeholder-token",
-        "userName": "placeholder-user",
-        "envVariablesMapping": {
-          "userName": "NUGET_USER",
-          "token": "NUGET_TOKEN"
-        },
-        "sourceName": "controller-test"
-      }
-    ],
     "remediateSettings": {
-      "branchPrefix": "ws-remediate/",
-      "dependencyDashboard": true
+      "workflowRules": {
+        "enabled": true
+      }
     }
   }
