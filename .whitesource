@@ -20,9 +20,7 @@
       }
     ],
     "remediateSettings": {
-      "enableRenovate": true,
       "branchPrefix": "ws-remediate/",
-      "enabledManagers": ["npm", "nuget"],
       "dependencyDashboard": true
     }
   }
